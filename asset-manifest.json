@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pawtawtasticform/static/css/main.b5883269.chunk.css",
+    "main.js": "/pawtawtasticform/static/js/main.4582de77.chunk.js",
+    "main.js.map": "/pawtawtasticform/static/js/main.4582de77.chunk.js.map",
+    "runtime-main.js": "/pawtawtasticform/static/js/runtime-main.2c5c1811.js",
+    "runtime-main.js.map": "/pawtawtasticform/static/js/runtime-main.2c5c1811.js.map",
+    "static/js/2.15409837.chunk.js": "/pawtawtasticform/static/js/2.15409837.chunk.js",
+    "static/js/2.15409837.chunk.js.map": "/pawtawtasticform/static/js/2.15409837.chunk.js.map",
+    "index.html": "/pawtawtasticform/index.html",
+    "precache-manifest.7f3e18f2f87000e7ea3e02882ca3f448.js": "/pawtawtasticform/precache-manifest.7f3e18f2f87000e7ea3e02882ca3f448.js",
+    "service-worker.js": "/pawtawtasticform/service-worker.js",
+    "static/css/main.b5883269.chunk.css.map": "/pawtawtasticform/static/css/main.b5883269.chunk.css.map",
+    "static/js/2.15409837.chunk.js.LICENSE.txt": "/pawtawtasticform/static/js/2.15409837.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c5c1811.js",
+    "static/js/2.15409837.chunk.js",
+    "static/css/main.b5883269.chunk.css",
+    "static/js/main.4582de77.chunk.js"
+  ]
+}
