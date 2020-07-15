@@ -19,14 +19,30 @@
   transition: all 0.3s;
 } 
 
-.checkbox:checked + .switch::after {
+/* .checkbox:checked + .switch::after {
   left: 20px;
 }
 
 .checkbox:checked + .switch {
   background-color: #7983ff;
-}
+} */
 
 /* .checkbox {
   display: none;
 } */
+.header {
+  text-align: center;
+}
+.form{
+  background-color: #cbc0d3;
+  height: 100hv;
+  padding: 10px;
+  margin: 0;
+}
+
+.dogForm{
+  background-color: #8e9aaf;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5em;
+}
