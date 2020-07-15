@@ -11,10 +11,30 @@ class App extends React.Component{
       gender: '',
       spayedOrNeutered: '',
       weight: '',
+      formCompleted: false
     }
   }
 
   //es6 functions
+onNameChange = (e) => {
+  this.setState({
+    name: e.target.value
+  })
+}
+
+onBreedChange = (e) => {
+  this.setState({
+    name: e.target.value
+  })
+}
+
+onBirthdayChange = (e) => {
+  this.setState({
+    name: e.target.value
+  })
+}
+
+
 handleFormSubmission = (event) =>{
   event.preventdefault();
   this.setState({
@@ -33,49 +53,72 @@ handleFormSubmission = (event) =>{
           <input
             type="name"
             placeholder="Enter Pups Name"
+            value={this.state.name}
+            onChange={this.onNameChange}
             />
             <br /><br />
+
           <label>Breed</label>
           <input
             type="name"
             placeholder="Pup's breed"
+            value={this.state.breed}
+            onChange={this.onBreedChange}
             />
             <br /><br />
+
             <label>Birthday</label>
             <input
               type="date"
               placeholder="Pup's date of birth"
+              value={this.state.birthday}
+              onChange={this.onBirthdayChange}
               />
               <br /><br />
-            <label>Gender</label>
+
+            <label >Gender</label><br/><br />
             <input
-              type="radio"
-              name= "gender"
-              value="female"
-              /> Female
+              type="checkbox"
+              id = "toggle"
+              class="checkbox"
+              /> 
+              <input for="toggle" class="switch"></input>Female
             <input
               type="radio"
               name= "gender"
               value="male"
               /> Male
               <br /><br />
+
             <label>Spayed or Neutered</label>
             <input
               type="radio"
-              value="yes"
-              value='no'
               /> Yes
             <input
               type="radio"
-              value="yes"
-              value='no'
               /> No
               <br /><br />
+
+              <label>Weight</label>
+              <input
+                type="radio"
+              /> 0 - 25 lbs
+              <input
+                type="radio"
+              /> 25 - 50 lbs
+              <input
+                type="radio"
+              /> 50 - 100 lbs
+              <input
+                type="radio"
+              /> 100+ lbs
+              <br /><br />
+
             <button
               type="submit"
               onClick={this.handleFormSubmission}>
                 Submit
-              </button>
+              </button> 
               {this.state.formCompleted === true ? (<h2>Thank you for completing this form!</h2>) : null}
         </form>
       </div>
