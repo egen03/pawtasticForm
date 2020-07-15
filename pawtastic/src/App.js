@@ -5,8 +5,8 @@ class App extends React.Component{
   constructor() {
     super ();
     this.state = {
-      name: '',
-      breed: '',
+      name:'',
+      breed:'',
       birthday: '',
       gender: '',
       spayedOrNeutered: '',
@@ -17,26 +17,29 @@ class App extends React.Component{
 
   //es6 functions
 onNameChange = (e) => {
+  e.preventDefault();
   this.setState({
     name: e.target.value
   })
 }
 
-onBreedChange = (e) => {
+onBreedChange = (event) => {
+  event.preventDefault();
   this.setState({
-    name: e.target.value
+    name: event.target.value
   })
 }
 
-onBirthdayChange = (e) => {
+onBirthdayChange = (event) => {
+  event.preventDefault();
   this.setState({
-    name: e.target.value
+    name: event.target.value
   })
 }
 
 
 handleFormSubmission = (event) =>{
-  event.preventdefault();
+   event.preventDefault();
   this.setState({
     formCompleted : true
   })
@@ -46,12 +49,13 @@ handleFormSubmission = (event) =>{
 
   render() {
     return (
-      <div>
-        <h1>YAY, we love dogs! Give us some basic info about your pup.</h1>
-        <form className="dog-form">
+      <div className="form">
+        <h1 className="header">YAY, we love dogs! Give us some basic info about your pup.</h1>
+        <form className="dogForm">
           <label>Name</label>
+          &nbsp; &nbsp;
           <input
-            type="name"
+            type="text"
             placeholder="Enter Pups Name"
             value={this.state.name}
             onChange={this.onNameChange}
@@ -59,30 +63,26 @@ handleFormSubmission = (event) =>{
             <br /><br />
 
           <label>Breed</label>
+          &nbsp; &nbsp;
           <input
-            type="name"
+            type="text"
             placeholder="Pup's breed"
-            value={this.state.breed}
-            onChange={this.onBreedChange}
             />
             <br /><br />
 
             <label>Birthday</label>
+            &nbsp; &nbsp;
             <input
               type="date"
               placeholder="Pup's date of birth"
-              value={this.state.birthday}
-              onChange={this.onBirthdayChange}
               />
               <br /><br />
 
-            <label >Gender</label><br/><br />
+            <label >Gender:</label><br/>
             <input
-              type="checkbox"
-              id = "toggle"
-              class="checkbox"
+              type="radio"
               /> 
-              <input for="toggle" class="switch"></input>Female
+              Female
             <input
               type="radio"
               name= "gender"
